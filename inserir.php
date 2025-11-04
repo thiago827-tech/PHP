@@ -1,7 +1,11 @@
 <?php require "conexao.php";
-$nome = "Maria";
-$email = "maria@gmail.com";
-$idade = 16;
+
+$nome = $_POST["nome"];
+$email = $_POST["email"];
+$idade = $_POST["idade"];
 $sql = $pdo->prepare("INSERT INTO alunos (nome, email, idade) VALUES (?, ?, ?)");
 $sql->execute([$nome, $email, $idade]);
-echo "Registro inserido com sucesso!"; ?>
+echo "<p style='text-align:center'>Registro inserido com sucesso!</p>";
+include "voltar.html";
+?>
+
