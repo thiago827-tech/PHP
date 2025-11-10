@@ -6,7 +6,8 @@
     <title>Deletar</title>
 </head>
 <body>
-    <div style="text-align:center">
+    <div style="text-align:center; font-family: Arial;">
+        <h2>DELETAR ALUNOS CADASTRADOS</h2>
     <form action="delete.php" method="post">
         <p>Insira o numero do ID correspondente a informação que deseja deletar ("*" para deletar tudo)</p>
         <label>ID</label>
@@ -14,5 +15,7 @@
         <button type="submit">Enviar</button>
     </form>
     </div>
+    <br>
+    <?php include "voltar.html"; ?>
 </body>
 </html>

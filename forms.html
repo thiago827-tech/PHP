@@ -5,22 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="text-align: center;">
-    <pre>
-     <form action="inserir.php" method="post" style="text-align: center;">
-    <label>Nome</label>
-    <input type="text" name="nome" required>
-    <label>Email</label>
-    <input type="email" name="email" required>
-    <label>Idade</label>
-    <input type="number" name="idade" required>
-  
-    <button type="submit">Cadastrar</button>
-    </form>
-    <a href="remover.html"><button>Deletar</button></a>
+    <div style="text-align: center; font-family: Arial;">
+        <h1>CADASTRO DE ALUNO</h1>
+        <br>
+        <form action="inserir.php" method="post" style="text-align: center;">
+            <label>Nome</label>
+            <input type="text" name="nome" required>
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <label>Idade</label>
+            <input type="number" name="idade" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <br>
+        <a href="listar.php"><button>Listar</button></a>
+        <a href="updateforms.php"><button>Alterar</button></a>
+        <a href="deleteforms.php"><button>Deletar</button></a>
     </div>
 </body>
+
 </html>
